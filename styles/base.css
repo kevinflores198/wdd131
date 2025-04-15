@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
 }
 
 :root {
@@ -17,14 +13,18 @@
     --footer: #0CAADC;
 }
 
+body{
+    background-color: var(--aside);
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .body-container {
     color: var(--primary-color);
     margin: 0 auto;
     width: 980px;
-}
-body{
-    background-color: var(--aside);
-
 }
 
 .nav {
