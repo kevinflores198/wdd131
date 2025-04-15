@@ -13,8 +13,8 @@
     --footer: #0CAADC;
 }
 
-body{
-    background-color: var(--aside);
+body {
+    background-color: var(--nav);
     font-family: "Montserrat";
     font-weight: 300;
     font-style: normal;
@@ -24,20 +24,21 @@ body{
     color: var(--primary-color);
     margin: 0 auto;
     width: 980px;
-}
-
-.nav {
     display: grid;
 }
 
 header {
-    background-color: var(--header);
-    padding: 2rem;
-    grid-row: 1/2;
+    background-color: var(--nav);
+    color: var(--primary-color);
+    border-radius: 1rem 1rem 0 0;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    display: grid;
 }
 
 h1 {
     text-align: center;
+    padding: 2rem;
 }
 
 nav {
@@ -54,9 +55,24 @@ nav {
 
 main {
     background-color: var(--main);
-    grid-column: 1/2;
+    grid-column: 1/3;
     padding: 1rem;
     display: grid;
+}
+
+aside {
+    background-color: var(--main);
+    color:var(--primary-color);
+    grid-column: 3/4;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--nav);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    grid-column: 1/4;
 }
 
 .card {
@@ -94,20 +110,7 @@ p {
 
 
 
-aside {
-    background-color: var(--nav);
-    grid-column: 2/3;
-    padding: 1rem;
-}
 
-footer {
-    background-color: var(--footer);
-    padding: 1rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 a {
     text-decoration: none;
@@ -123,4 +126,3 @@ a:hover {
     background-color: var(--primary-color);
     color: var(--nav);
 }
-
