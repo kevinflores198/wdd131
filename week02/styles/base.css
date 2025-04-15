@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #ffff;
+    --header: #1481BA;
+    --nav: #001021;
+    --main: #034748;
+    --aside: #11B5E4;
+    --footer: #0CAADC;
+}
+
+.body-container {
+    color: var(--primary-color);
+    margin: 0 auto;
+    width: 980px;
+}
+body{
+    background-color: var(--aside);
+
+}
+
+.nav {
+    display: grid;
+}
+
+header {
+    background-color: var(--header);
+    padding: 2rem;
+    grid-row: 1/2;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: var(--nav);
+    justify-content: space-evenly;
+    grid-row: 2/3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+
+main {
+    background-color: var(--main);
+    grid-column: 1/2;
+    padding: 1rem;
+    display: grid;
+}
+
+.card {
+    background-color: var(--nav);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    margin: 10px;
+    display: grid;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--nav);
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+    padding: 0.3rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+img {
+    width: 350px;
+    padding: 1rem;
+    border-radius: 40px;
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+p {
+    padding: 1rem;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+
+
+aside {
+    background-color: var(--nav);
+    grid-column: 2/3;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--footer);
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+    transition: .5s;
+}
+
+a:hover {
+    background-color: var(--primary-color);
+    color: var(--nav);
+}
+
