@@ -16,7 +16,6 @@
 body{
     background-color: var(--aside);
     font-family: "Montserrat";
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
