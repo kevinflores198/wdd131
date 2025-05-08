@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
 }
 
-h2 {
+p {
     color: var(--black);
     text-align: center;
     padding: .5rem;
