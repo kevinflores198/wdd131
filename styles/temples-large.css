@@ -9,7 +9,7 @@
     --gray-2: #88A0A8;
     --green: #B4CEB3;
     --pink: #DBD3C9;
-    --pink-2: #d1adb0a6;
+    --pink-2: #d1adb0ec;
     --white: #fff;
     --black: black;
 }
@@ -103,6 +103,11 @@ figure:hover {
 
 img {
     border-radius: .5rem;
+}
+
+.extra-info{
+    padding: 1rem;
+    
 }
 
 footer {
