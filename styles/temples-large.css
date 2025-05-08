@@ -53,6 +53,10 @@ ul {
     align-items: center;
 }
 
+img {
+    width: 250px;
+}
+
 a {
     text-decoration: none;
     color: var(--black);
