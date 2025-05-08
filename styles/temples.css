@@ -1,0 +1,66 @@
+@media (max-width:850px) {
+    :root {
+        --gray: #546A76;
+        --gray-2: #88A0A8;
+        --green: #B4CEB3;
+        --pink: #DBD3C9;
+        --pink-2: #d1adb0a6;
+        --white: #fff;
+        --black: black;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+
+    }
+
+    #menu {
+        display: block;
+        text-decoration: none;
+        font-size: 40px;
+        text-align: center;
+        color: black;
+        padding: .5rem;
+        width: 20%;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.active::before {
+        content: "X";
+        font-size: 30px;
+    }
+
+    a {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .navigation {
+        display: none;
+        height: 250px;
+        transition: .5s;
+    }
+
+    h2 {
+        text-align: start;
+        display: none;
+    }
+
+    .navigation.showing {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
