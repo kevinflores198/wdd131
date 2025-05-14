@@ -76,22 +76,23 @@ a:hover {
     color: var(--white);
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     padding: 1rem;
+    grid-column: 1/4;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 main {
     max-width: 850px;
     margin: 0 auto;
-}
-
-.pictures {
     display: grid;
     padding: .5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     place-items: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.274);
 }
 
 figure {
