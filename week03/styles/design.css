@@ -47,3 +47,11 @@ footer {
     font-size: smaller;
     text-align: left;
 }
+
+section:first-of-type{
+    background-color: red;
+}
+
+section:last-of-type{
+    background-color: blue;
+}
