@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #04080F;
+    --secondary-color: #507DBC;
+    --background: #BBD1EA;
+    --highlight: #A1C6EA;
+    --title: #DAE3E5;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+    height: 100%;
+}
+
+.body-container {
+    margin: 0 auto;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--title);
+}
+
+
+h2 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+    padding: 0.3rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    transition: .5s;
+    cursor: pointer;
+}
+
+img {
+    width: 350px;
+    padding: 1rem;
+    border-radius: 40px;
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+p {
+    padding: 1rem;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-color: var(--highlight);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+    transition: .5s;
+}
+
+a:hover,
+.card h2:hover,
+aside h2:hover {
+    background-color: var(--highlight);
+    color: var(--primary-color);
+}
+
+header {
+    color: var(--primary-color);
+    border-radius: 1rem 1rem 0 0;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    display: block;
+}
+
+nav {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-evenly;
+    grid-row: 2/3;
+}
+
+main {
+    grid-column: 1/3;
+    padding: 1rem;
+    display: grid;
+}
+
+aside {
+    color: var(--primary-color);
+    grid-column: 3/4;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    grid-column: 1/4;
+    
+}
+
+.card {
+    background-color: var(--highlight);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    margin: 10px;
+    display: grid;
+}
