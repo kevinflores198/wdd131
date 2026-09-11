@@ -1,62 +1,104 @@
-@media (max-width:850px) {
-    :root {
-        --gray: #546A76;
-        --gray-2: #88A0A8;
-        --green: #B4CEB3;
-        --pink: #DBD3C9;
-        --pink-2: #d1adb0a6;
-        --white: #fff;
-        --black: black;
-    }
+:root {
+    --primary: #ccdff0;
+    --secondary: #061A40;
+    --alternative: #0353A4;
+    --highlight: #006DAA;
+}
 
-    header {
-        flex-direction: column;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    nav {
-        width: 100%;
+body {
+    background-color: var(--primary);
+    color: #061A40;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-    }
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
 
-    #menu {
-        display: block;
-        text-decoration: none;
-        font-size: 40px;
-        text-align: center;
-        color: black;
-        padding: .5rem;
-        width: 20%;
-    }
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
 
-    #menu::before {
-        content: "≡";
-    }
+p {
+    color: var(--primary);
+}
 
-    #menu.active::before {
-        content: "X";
-        font-size: 30px;
-    }
+img {
+    width: 350px;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+}
 
-    a {
-        text-align: center;
-        width: 100%;
+ul {}
 
-    }
+li {}
 
-    .navigation {
-        display: none;
-        height: 250px;
-        transition: .5s;
-    }
+figure {}
 
-    p {
-        text-align: start;
-        display: none;
-    }
+figcaption {}
 
-    .navigation.showing {
-        display: flex;
-        flex-direction: column;
+#burger {
+    color: var(--primary);
+    font-size: 2rem;
+}
 
-    }
+header {
+    background-color: var(--alternative);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 50px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+nav {
+    display: none;
+}
+
+nav.active{
+    display: block;
+}
+
+.navigation.showing{
+    display: block;
+    background-color: var(--secondary);
+}
+
+main {
+    margin-top: 100px;
+
+}
+
+.figure-contianer {
+    width: 90%;
+}
+
+footer {
+    background-color: var(--alternative);
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
 }
