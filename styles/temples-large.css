@@ -1,0 +1,44 @@
+@media screen and (min-width: 600px) {
+
+    #burger {
+        display: none;
+    }
+
+    header{
+        padding: 1.5rem;
+    }
+
+    header p{
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: end;
+        position: static;
+        max-height: none;
+        opacity: 1;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .navigation a{
+        padding: 0 20px 0 20px;
+    }
+
+    main{
+
+    }
+
+    .figure-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .extra-info{
+        margin-bottom: 2rem;
+    }
+}

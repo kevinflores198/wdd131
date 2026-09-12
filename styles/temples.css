@@ -25,6 +25,12 @@ h1 {
 a {
     text-decoration: none;
     color: var(--primary);
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -38,17 +44,31 @@ img {
     display: flex;
 }
 
-ul {}
+figure {
+    margin: 20px;
+}
 
-li {}
+figcaption {
+    text-align: center;
+    margin: 10px 0 20px 0;
 
-figure {}
+}
 
-figcaption {}
+.extra-info a {
+    color: red;
+    padding: 0;
+}
+
+.extra-info {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
 
 #burger {
     color: var(--primary);
     font-size: 2rem;
+    cursor: pointer;
 }
 
 header {
@@ -75,17 +95,35 @@ header p {
     font-size: 1.2rem;
 }
 
-nav {
+.navigation {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--alternative);
+    border-radius: 50px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    padding: .3rem;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+
 }
 
-nav.active{
+.navigation.showing {
     display: block;
-}
-
-.navigation.showing{
-    display: block;
-    background-color: var(--secondary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    max-height: 300px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -101,4 +139,9 @@ footer {
     background-color: var(--alternative);
     padding: 1rem 1rem 2rem 1rem;
     text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    padding: .4rem;
 }
