@@ -37,7 +37,7 @@ p {
     color: var(--primary-color);
 }
 
-label {
+.label-content p {
     margin-bottom: .4rem;
 }
 
@@ -135,7 +135,7 @@ footer p {
         height: 90vh;
     }
 
-    .card label {
+    .card .label-content p {
         font-size: .8rem;
     }
 
