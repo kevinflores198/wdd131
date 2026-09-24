@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 
-h1{
+h1 {
     margin-top: 4rem;
     margin-left: 2rem;
     position: absolute;
@@ -91,17 +91,6 @@ picture source {
     padding: 1rem;
 }
 
-.card2 svg {
-    display: none;
-}
-
-.card2 h2::after {
-    content: "⛅";
-    display: block;
-    font-size: 2rem;
-    margin-top: 0.5rem;
-}
-
 footer {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -116,9 +105,10 @@ footer p {
 
 @media screen and (min-width:600px) {
 
-    header span{
+    header span {
         max-width: 750px;
     }
+
     picture img {
         width: 100%;
         max-height: 750px;
@@ -127,9 +117,11 @@ footer p {
         display: block;
         border-radius: 0;
     }
-    h1{
+
+    h1 {
         color: var(--title);
     }
+
     main {
         display: grid;
         height: 90vh;
@@ -139,7 +131,7 @@ footer p {
         font-size: .8rem;
     }
 
-    .card{
+    .card {
         max-width: 450px;
     }
 
@@ -162,6 +154,15 @@ footer p {
         grid-column: 2/3;
     }
 
+    .card2 svg {
+        display: none;
+    }
 
+    .card2 h2::after {
+        content: "⛅";
+        display: block;
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
 
 }
