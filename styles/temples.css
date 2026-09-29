@@ -53,7 +53,6 @@ figure {
 figcaption {
     text-align: center;
     margin: 10px 0 20px 0;
-
 }
 
 .extra-info a {
@@ -110,7 +109,6 @@ header p {
     margin-top: 0.5rem;
     padding: .3rem;
     transition: max-height 0.4s ease, opacity 0.3s ease;
-
 }
 
 .navigation.showing {
@@ -127,7 +125,6 @@ header p {
 
 main {
     margin-top: 100px;
-
 }
 
 footer {

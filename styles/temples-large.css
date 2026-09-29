@@ -28,12 +28,12 @@
         padding: 0 20px 0 20px;
     }
 
-.figure-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    justify-items: center;
-}
+    .figure-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
 
     .extra-info {
         margin-bottom: 2rem;
