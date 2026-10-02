@@ -1,17 +1,28 @@
-const inputAction = document.querySelector('.#favChap');
+const inputAction = document.querySelector('#favchap');
 const buttonAction = document.querySelector('button');
-const listAction = document.querySelector('_');
+const listAction = document.querySelector('#list');
 
-const listCreated = document.createElement('li');
-const buttonDelete = document.createElement('button');
+buttonAction.addEventListener('click', function () {
 
-// Populate the li element variable's textContent or innerHTML with the input value.
-listAction.textContent = input.valiue;
+    if (inputAction.value != "") {
 
-buttonAction.textContent = '❌';
+        const listCreated = document.createElement('li');
+        const buttonDelete = document.createElement('button');
 
-// Append the delete button to the li element.
-listCreated.appendChild(buttonDelete);
+        // Populate the li element variable's textContent or innerHTML with the input value.
+        listCreated.textContent = inputAction.value;
 
-// Append the li element variable to the unordered list in your HTML.
-listAction.append(listCreated);
+        buttonDelete.textContent = '❌';
+
+        // Append the delete button to the li element.
+        listCreated.appendChild(buttonDelete);
+
+        // Append the li element variable to the unordered list in your HTML.
+        listAction.append(listCreated);
+
+        buttonDelete.addEventListener('click', function () {
+            listAction.removeChild(listCreated);
+            inputAction.focus();
+        });
+    }
+});
