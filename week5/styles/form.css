@@ -1,0 +1,107 @@
+:root {
+  --bg: #f4f7fa;
+  --text: #1c1c1c;
+  --primary: #1b4965;
+  --border: #5c6b77;
+  --required: #b00020;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header, footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p { margin: 0.25rem 0; }
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.field { margin-bottom: 1.25rem; }
+
+label, legend { font-weight: 600; }
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.req { color: var(--required); }
+.note { margin-top: 0; font-size: 0.9rem; }
+
+select, input[type="date"], input[type="text"], textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.rating, .checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.rating input { margin-left: 0; }
+.rating label, .checks label { font-weight: 400; }
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus { background: #0f2f44; }
+
+:focus-visible { outline: 3px solid #e09f1f; outline-offset: 2px; }
+
+.confirmation { text-align: center; }
+
+@media (min-width: 700px) {
+  form { padding: 2rem; }
+  input[type="submit"] { width: auto; padding: 0.8rem 2rem; }
+}
