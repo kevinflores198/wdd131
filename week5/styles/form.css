@@ -41,6 +41,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 form {
@@ -99,7 +100,6 @@ input[type="submit"]:focus { background: #0f2f44; }
 
 :focus-visible { outline: 3px solid #e09f1f; outline-offset: 2px; }
 
-.confirmation { text-align: center; }
 
 @media (min-width: 700px) {
   form { padding: 2rem; }
