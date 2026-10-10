@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-On! – Site Plan – WDD 131 Project</title>
+    <meta name="description" content="Site plan for Hands-On!, a website about Apple iOS devices based on real daily use, with original photos taken by the author.">
+    <meta name="author" content="kevin nicolas flores gonzalez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/siteplan-week5.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="#top">
+                <img src="images/hands-on-logo.svg" alt="" width="44" height="44">
+                <span>Hands-On!</span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Site plan sections">
+            <a href="#name">Name</a>
+            <a href="#purpose">Purpose</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#colors">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#wireframes">Wireframes</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <h1>Hands-On!</h1>
+            <p class="tagline">Rather than theory!</p>
+            <p>This is the site plan for my WDD 131 final project: a website about Apple iOS devices, told from real daily use by me.</p>
+        </section>
+
+        <section class="card" id="name">
+            <h2>Site name</h2>
+            <p><strong>Hands-On!</strong></p>
+            <p>The name means that the site talks about Apple iOS devices from real use, not from specification sheets.
+                I own these devices and use them every day, so I can show the quality of the products and how the
+                iOS system really works, with my own photos. The lens in the logo represents those photos, and that
+                is why the tagline is "Rather than theory!"</p>
+        </section>
+
+        <section class="card" id="purpose">
+            <h2>Site purpose</h2>
+            <ul>
+                <li>Explain each Apple iOS product from real use, in simple words: what it does and who it is for.</li>
+                <li>Show original pictures of the devices, taken by me, as real examples.</li>
+                <li>Let visitors ask questions or suggest a product through a contact form.</li>
+            </ul>
+            <p>Planned pages: Home, Products, Contact, and a References page.</p>
+        </section>
+
+        <section class="card" id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What are the main differences between the current iPhone models, and which one should I choose?</li>
+                <li>What can an iPad do that my iPhone cannot, and is it worth it for studying?</li>
+                <li>How do the photos look when they are taken with a real iPhone camera in everyday light?</li>
+            </ul>
+        </section>
+
+        <section class="card" id="colors">
+            <h2>Color scheme</h2>
+            <p>These colors are used on this document and will be used on the final site.</p>
+            <ul class="swatches">
+                <li class="swatch swatch-midnight"><strong>Midnight #0B1F3A</strong>
+                    Page background, headings, and body text on white cards.</li>
+                <li class="swatch swatch-paper"><strong>Paper #F3F6FA</strong>
+                    Text on dark backgrounds, such as the hero description.</li>
+                <li class="swatch swatch-teal"><strong>Lens Teal #006B76</strong>
+                    Footer background, section titles, links, and buttons.</li>
+                <li class="swatch swatch-amber"><strong>Amber #F2A900</strong>
+                    Header bar and small accents such as highlights.</li>
+                <li class="swatch swatch-white"><strong>White #FFFFFF</strong>
+                    Content card backgrounds.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="typography">
+            <h2>Typography</h2>
+            <article class="font-sample font-heading">
+                <h3>Poppins SemiBold</h3>
+                <p>Used for the site name, page titles, and section headings.</p>
+            </article>
+            <article class="font-sample font-body">
+                <h3>Inter</h3>
+                <p>Used for paragraphs, navigation links, form labels, and buttons.</p>
+            </article>
+        </section>
+
+        <section class="card" id="wireframes">
+            <h2>Wireframes</h2>
+            <p>Home page layout for a phone and for a larger screen.</p>
+            <div class="wireframes">
+                <figure>
+                    <img src="images/wireframe-mobile.png" alt="Mobile wireframe of the home page: header with logo and menu button, hero image, hero description, three cards, a form, and a footer" width="320" height="560" loading="lazy">
+                    <figcaption>Mobile view</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wireframe-desktop.png" alt="Large screen wireframe of the home page: header with logo and horizontal menu, hero description beside the hero image, three cards in a row, a wide form, and a footer" width="800" height="520" loading="lazy">
+                    <figcaption>Large screen view</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kevin Flores - Buenos Aires, Argentina</p>
+        <p><span id="lastmodified"></span></p>
+        <p class="social">
+            <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/kevinflores198" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </footer>
+</body>
+
+</html>
