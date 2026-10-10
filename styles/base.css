@@ -8,10 +8,10 @@
 }
 
 :root {
-    --primary-color: #04080F;
-    --secondary-color: #507DBC;
-    --background: #BBD1EA;
-    --highlight: #A1C6EA;
+    --primary-color: #BBD1EA;
+    --secondary-color: #F47A45;
+    --background: #0B1F3A;
+    --highlight: #243B63;
     --title: #DAE3E5;
 }
 
@@ -33,7 +33,7 @@ body {
 #course-title {
     text-align: center;
     padding: 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--background);
     color: var(--title);
     align-items: center;
     justify-content: center;
@@ -44,6 +44,7 @@ h1 {
     align-items: center;
     display: flex;
     margin: 0 auto;
+    color: var(--primary-color);
 }
 
 h2 {
@@ -87,7 +88,7 @@ a {
 a:hover,
 .card h2:hover,
 aside h2:hover {
-    background-color: var(--highlight);
+    background-color: var(--background);
     color: var(--primary-color);
 }
 
@@ -101,7 +102,7 @@ header {
 
 nav {
     display: flex;
-    background-color: var(--secondary-color);
+    background-color: var(--highlight);
     justify-content: space-evenly;
     grid-row: 2/3;
 }
@@ -133,7 +134,7 @@ footer {
     text-align: center;
     border-radius: 0 0 1rem 1rem;
     grid-column: 1/4;
-
+color: var(--primary-color);
 }
 
 .card {

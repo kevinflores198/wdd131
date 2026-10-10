@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Hands-On!</title>
+    <meta name="description" content="Ask a question about my Apple devices. Save it in your browser or send it to me on WhatsApp.">
+    <meta name="author" content="kevin nicolas flores gonzalez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/storage.js"></script>
+    <script defer src="scripts/contact.js"></script>
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/hands-on-logo.svg" alt="Hands-On! home page" width="44" height="44">
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#reason">Reason</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Contact</h1>
+            <p>Ask me anything about these devices.</p>
+        </section>
+
+        <div class="cards contact-cards">
+            <section class="card" id="ask">
+                <h2>Ask a question</h2>
+                <form id="question-form">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" autocomplete="given-name" required>
+
+                    <label for="device">Device</label>
+                    <select id="device" name="device">
+                        <option>iPad Air 13-inch (M4)</option>
+                        <option>MacBook Air</option>
+                        <option>iPhone 17 Pro</option>
+                        <option>Another device</option>
+                    </select>
+
+                    <label for="question">Your question</label>
+                    <textarea id="question" name="question" rows="5" minlength="10" required></textarea>
+
+                    <div class="form-buttons">
+                        <button class="btn" type="submit">Save question</button>
+                        <button class="btn btn-outline" type="button" id="send-button">Send question</button>
+                    </div>
+                    <p id="form-message" class="form-message" role="status"></p>
+                </form>
+            </section>
+
+            <section class="card" id="saved">
+                <h2>Your saved questions</h2>
+                <p id="saved-count"></p>
+                <ul id="question-list" class="question-list"></ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kevin Flores - Buenos Aires, Argentina</p>
+        <p><span id="lastmodified"></span></p>
+        <p class="social">
+            <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/kevinflores198" target="_blank" rel="noopener">GitHub</a>
+            <a href="references.html">References</a>
+        </p>
+    </footer>
+</body>
+
+</html>
