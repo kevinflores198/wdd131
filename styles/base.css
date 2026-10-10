@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--highlight);
     border-radius: 1rem 1rem 0 0;
     text-align: center;
     padding: 0.3rem;
