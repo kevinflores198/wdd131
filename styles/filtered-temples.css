@@ -1,0 +1,143 @@
+:root {
+    --primary: #ccdff0;
+    --secondary: #061A40;
+    --alternative: #0353A4;
+    --highlight: #006DAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    color: #061A40;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: var(--primary);
+}
+
+img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 20px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+figcaption p {
+    color: var(--secondary);
+}
+
+.extra-info a {
+    padding: 0;
+    color: var(--secondary);
+}
+
+.extra-info {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#burger {
+    color: var(--primary);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--secondary);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 50px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--secondary);
+    border-radius: 50px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    padding: .3rem;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.navigation.showing {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    max-height: 300px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: var(--secondary);
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    padding: .4rem;
+}

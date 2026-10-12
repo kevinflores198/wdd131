@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples Album</title>
+    <meta name="author" content="kevin Flores">
+    <meta name="description"
+        content="A responsive, filterable photo album of LDS temples, dynamically generated with JavaScript, with navigation for Home, Old, New, Large, and Small views.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>Temple Album</p>
+        <div id="burger">☰</div>
+        <nav class="navigation">
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple pictures</h1>
+        <div class="figure-container" id="figure-container"></div>
+        <h2 class="extra-info">For more info about temple, visit this link: <a
+                href="https://www.churchofjesuschrist.org/temples?lang=eng">CLICK HERE!</a></h2>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kevin Flores - BS AS, Argentina</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>
